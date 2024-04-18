@@ -1,8 +1,6 @@
-# Git Basic Commands
+# Git Basics
 
-The list of Git commands to start with
-
----
+## The list of Git commands to start with
 
 ```bash
 git version
@@ -16,6 +14,7 @@ git config --global user.name 'username'
 ```
 
 Sets the name that will be added to commits as the name of the author of changes.
+
 
 ```bash
 git config --global user.email 'email'
@@ -39,6 +38,7 @@ Creates a hidden ```.git``` directory in the current (working) directory.
 This hidden directory serves as a ```repository``` and stores the history 
 of changes to selected files in the working directory and its subdirectories.
 
+
 ```bash
 git status
 ```
@@ -46,6 +46,7 @@ git status
 Shows the current status of the repository: if there are any new files or 
 changes to monitored files, and if any of these files are prepared to be 
 stored in the repository.
+
 
 ```bash
 git add [path to file or directory] [path to file or directory] ...
@@ -55,12 +56,14 @@ git add --all
 Prepares files (or all the files in the working directory and its 
 subdirectories with ```--all```) to be stored in the repository.
 
+
 ```bash
 git commit -m 'message'
 ```
 
 Saves files, prepared by ```git add```, to the repository and adds 
 ```message``` as a comment to the commit.
+
 
 ```bash
 git log
@@ -77,11 +80,13 @@ Links the repository to a remote repository in order to send and receive
 commits. The remote repository may be accessed by several users simultaneously 
 and from different locations.
 
+
 ```bash
 git remote -v
 ```
 
 Shows existing links to remote repositories.
+
 
 ```bash
 git push -u [remote repository name] [branch name]
@@ -108,6 +113,7 @@ git clone [remote repository URL]
 
 Creates a local copy of remote repository and an appropriate link from the 
 newly created repository to the remote repository (see ```git remote -v```). 
+
 
 ---
 
