@@ -115,6 +115,21 @@ Creates a local copy of remote repository and an appropriate link from the
 newly created repository to the remote repository (see ```git remote -v```). 
 
 
+## File lifecycle in Git
+
+```mermaid
+sequenceDiagram
+	participant untracked
+	participant tracked/modified
+	participant tracked/staged
+	participant tracked/committed
+	untracked->>tracked/staged: git add
+	tracked/staged->>tracked/committed: git commit
+	tracked/staged->>tracked/modified: file modification
+	tracked/committed->>tracked/modified: file modification
+	tracked/modified->>tracked/staged: git add
+```
+
 ---
 
 Author: Andrei Kuniutka <akuniutka@gmail.com>
