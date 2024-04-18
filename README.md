@@ -130,6 +130,26 @@ sequenceDiagram
 	tracked/modified->>tracked/staged: git add
 ```
 
+
+## Commit messages guidelines
+
+- keep commit summary short (no more than 72 characters), but informative
+- prefer verbs to other words: use 'improve' instead of 'improvement'
+- write message in the imperative: 'fix' instead of 'fixed'
+- separate a detailed commit description from its summary by blank line
+
+Example:
+
+```
+fix: rename project to 'Git Basics', improve README formatting
+
+Rename the project to 'Git Basics' as it is to contain different
+information on Git, not only Git commands. Introduce the chapter
+header for the list of Git commands in README. Add blank lines
+in README in order to make it easier to read in raw format.
+```
+
+
 ---
 
 Author: Andrei Kuniutka <akuniutka@gmail.com>
