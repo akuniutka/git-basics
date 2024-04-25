@@ -1,3 +1,3 @@
 # Test
 
-Test line withh a typo. Should correct it.
+Test line with a typo. Should correct it.
